@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Highlight from "react-highlight.js";
+import Highlight from "react-highlight";
 import ClipboardJS from 'clipboard';
 import { initCodeViewer } from "@utils";
 
@@ -14,13 +14,13 @@ class CodeViewer extends Component {
     const pre = this.elem.current.refs.code.parentElement;
 
     // add/remove class to pre tag
-    pre.classList.add('collapsed');    
+    pre.classList.add('collapsed');
     pre.addEventListener('click', (e) => {
       e.target.classList.remove('collapsed');
     });
 
     // Add copy button
-    var copyButton = document.createElement("BUTTON");              
+    var copyButton = document.createElement("BUTTON");
     var copyButtonText = document.createTextNode("Copy");
     copyButton.appendChild(copyButtonText);
     copyButton.classList.add('btn', 'btn-sm', 'btn-primary', 'btn-copy')
@@ -32,7 +32,7 @@ class CodeViewer extends Component {
         return this.elem.current.props.children;
       }
     });
-    
+
   }
 
   render() {

@@ -4,12 +4,9 @@ import dashboardRoutes from "./views/dashboard/dashboardRoutes";
 import sessionsRoutes from "./views/sessions/sessionsRoutes";
 import AuthGuard from "./auth/AuthGuard";
 import widgetsRoute from "./views/widgets/widgetsRoute";
-import pagesRoutes from "./views/pages/pagesRoutes";
 import invoiceRoutes from "./views/app/invoice/invoiceRoutes";
-import inboxRoutes from "./views/app/inbox/inboxRoutes";
 import calendarRoutes from "./views/app/calendar/calendarRoutes";
 import taskManagerRoutes from "./views/app/task-manager/taskManagerRoutes";
-import ecommerceRoutes from "./views/app/ecommerce/ecommerceRoutes";
 import contactRoutes from "./views/app/contact/contactRoutes";
 import roomsRoutes from "./views/rooms/roomRoutes";
 import membershipsRoutes from "./views/memberships/membershipRoutes";
@@ -39,12 +36,9 @@ const routes = [
     routes: [
       ...dashboardRoutes,
       ...widgetsRoute,
-      ...pagesRoutes,
       ...invoiceRoutes,
-      ...inboxRoutes,
       ...taskManagerRoutes,
       ...calendarRoutes,
-      ...ecommerceRoutes,
       ...contactRoutes,
       ...roomsRoutes,
       ...membershipsRoutes,

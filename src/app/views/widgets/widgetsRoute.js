@@ -2,9 +2,9 @@ import { lazy } from "react";
 
 const CardWidget = lazy(() => import("./CardWidget"));
 
-const StatisticsWidget = lazy(() => import("./StatisticsWidget"));
+// const StatisticsWidget = lazy(() => import("./StatisticsWidget"));
 
-const ListWidget = lazy(() => import("./ListWidget"));
+// const ListWidget = lazy(() => import("./ListWidget"));
 
 const AppWidget = lazy(() => import("./AppWidget"));
 
@@ -15,14 +15,14 @@ const widgetsRoute = [
     path: "/widgets/card",
     component: CardWidget
   },
-  {
-    path: "/widgets/statistics",
-    component: StatisticsWidget
-  },
-  {
-    path: "/widgets/list",
-    component: ListWidget
-  },
+  // {
+  //   path: "/widgets/statistics",
+  //   component: StatisticsWidget
+  // },
+  // {
+  //   path: "/widgets/list",
+  //   component: ListWidget
+  // },
   {
     path: "/widgets/app",
     component: AppWidget
